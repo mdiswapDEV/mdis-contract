@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at hecoinfo.com on 2021-03-16
+*/
+
 pragma solidity =0.5.16;
 
 interface IMdisFactory {
@@ -457,8 +461,8 @@ contract MdisFactory is IMdisFactory {
 
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
-    constructor(address _feeToSetter) public {
-        feeToSetter = _feeToSetter;
+    constructor() public {
+        feeToSetter = msg.sender;
     }
 
     function allPairsLength() external view returns (uint) {
