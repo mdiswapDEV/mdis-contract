@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at hecoinfo.com on 2021-03-16
+*/
+
 pragma solidity =0.6.6;
 
 interface IMdisFactory {
@@ -260,7 +264,7 @@ library MdisLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'7cf093194de8bec883347c6acbbbe8ec9c9d12bcdc9350df7fa3b4beec323de8' // init code hash
+                hex'c5a24d8158ef97c42050dd7ff53c64db08633f3aa6250cc47b90e63eaeddb4ff' // init code hash
             ))));
     }
 
